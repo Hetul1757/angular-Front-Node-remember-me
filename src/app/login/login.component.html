@@ -1,0 +1,24 @@
+
+
+    <form [formGroup]="rForm" (ngSubmit)="addlogin(rForm.value)">
+      
+          <h1>My Reactive Form</h1>
+  
+          <label>Name
+            <input type="text" formControlName="username" value="{{uname}}">
+          </label>
+          
+          <br>
+          
+          <label>Password
+            <input type="password" formControlName="password" value="{{pwd}}">
+          </label>
+          <br>
+  
+          
+          <input type="checkbox" name="rememberMe" formControlName="rememberMe" > Remember Me
+          <br>
+
+          <input type="submit" value="Login" >
+    </form>
+    {{error}}
